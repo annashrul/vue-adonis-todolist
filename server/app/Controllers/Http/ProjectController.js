@@ -27,7 +27,9 @@ class ProjectController {
     await user.projects().save(project);
     return project;
   }
+  async show(){
   
+  }
   async destroy({auth,request,params}){
     const user = await auth.getUser();
     const {id} = params;
